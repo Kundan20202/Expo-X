@@ -1,0 +1,15 @@
+{
+    "name": "Expo Environment",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:16",
+    "postCreateCommand": "npm install -g expo-cli eas-cli && npm install",
+    "customizations": {
+      "vscode": {
+        "extensions": ["esbenp.prettier-vscode", "dbaeumer.vscode-eslint"]
+      }
+    },
+    "features": {
+      "docker-in-docker": "latest"
+    },
+    "forwardPorts": [19000, 19001, 19002]
+  }
+  
